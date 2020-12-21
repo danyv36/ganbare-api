@@ -1,17 +1,56 @@
 [
     {
-        "Id": 1,
-        "WrongCounter": 12,
-        "RightCounter": 15
+        "Id": 32,
+        "Japanese": "わけ",
+        "Hiragana": "",
+        "English": "(the reason) why",
+        "Sentence": "どうしてうそをついたか、わけを聞こう。",
+        "Tags": "",
+        "RightCounter": 1
     },
     {
-        "Id": 2,
-        "WrongCounter": 0,
-        "RightCounter": 24
+        "Id": 34,
+        "Japanese": "世話",
+        "Hiragana": "せわ",
+        "English": "patronage; care",
+        "Sentence": "犬の世話をする。",
+        "Tags": "",
+        "RightCounter": 1
     },
     {
-        "Id": 3,
-        "WrongCounter": 3,
-        "RightCounter": 23
+        "Id": 35,
+        "Japanese": "さっき",
+        "Hiragana": "",
+        "English": "just now",
+        "Sentence": "",
+        "Tags": "always forget",
+        "RightCounter": 1
+    },
+    {
+        "Id": 30,
+        "Japanese": "うそ",
+        "Hiragana": "",
+        "English": "lies",
+        "Sentence": "彼の言ったことが全部うそだと知って、おこった。",
+        "Tags": "",
+        "WrongCounter": 1
+    },
+    {
+        "Id": 31,
+        "Japanese": "さわぐ",
+        "Hiragana": "",
+        "English": "to shout",
+        "Sentence": "大学生がお酒飲んでさわいでいる。",
+        "Tags": "",
+        "RightCounter": 1
+    },
+    {
+        "Id": 33,
+        "Japanese": "吐く",
+        "Hiragana": "つく",
+        "English": "to tell (a lie)",
+        "Sentence": "どうしてうそをついたか、わけを聞こう。",
+        "Tags": "",
+        "WrongCounter": 1
     }
 ]

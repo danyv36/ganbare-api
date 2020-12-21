@@ -19,22 +19,29 @@ app.post('/vocab', cors(), (req, res) => {
     console.log(vocabList);
     console.log(req.body);
     const results = (req.body as ICounterReq).results;
-    const response: ICounter[] = [];
     results.forEach((a) => {
         const word = vocabList.find((v) => v.Id === a.Id);
-        response.push(word);
         if (word) {
             if (a.Correct) {
                 word.RightCounter += 1;
             } else {
                 word.WrongCounter += 1;
             }
+        } else {
+            if (a.Correct) {
+                a.RightCounter = 1;
+            } else {
+                a.WrongCounter = 1;
+            }
+            delete a.Correct;
         }
     });
 
-    fs.writeFileSync('src/flashcards/vocab.json', JSON.stringify(vocabList, undefined, 4));
-    fs.writeFileSync(path.resolve(__dirname, './flashcards/vocab.json'), JSON.stringify(vocabList, undefined, 4));
-    res.send({response});
+    console.log('response::', results);
+
+    fs.writeFileSync('src/flashcards/vocab.json', JSON.stringify(results, undefined, 4));
+    fs.writeFileSync(path.resolve(__dirname, './flashcards/vocab.json'), JSON.stringify(results, undefined, 4));
+    res.send({results});
 });
 
 app.listen(port, () => {

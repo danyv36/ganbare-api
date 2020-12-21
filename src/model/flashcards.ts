@@ -11,6 +11,8 @@ export interface IFlashcardVocab {
     Sentence?: string;
     Tags?: string;
     Correct?: boolean;
+    RightCounter?: number;
+    WrongCounter?: number
 }
 
 export interface ICounterReq {
