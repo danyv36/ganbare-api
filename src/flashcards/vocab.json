@@ -1,0 +1,17 @@
+[
+    {
+        "Id": 1,
+        "WrongCounter": 12,
+        "RightCounter": 10
+    },
+    {
+        "Id": 2,
+        "WrongCounter": 0,
+        "RightCounter": 19
+    },
+    {
+        "Id": 3,
+        "WrongCounter": 2,
+        "RightCounter": 19
+    }
+]
